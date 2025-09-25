@@ -1,84 +1,28 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>orchan akademi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #111011;
-      color: white;
-      overflow: hidden;
-    }
-    nav {
-      background-color: #111011;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      border-bottom: 1px solid #222;
-    }
-    nav .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #cccf1e;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
-    nav ul li {
-      cursor: pointer;
-      color: #ccc;
-      transition: color 0.3s;
-    }
-    nav ul li:hover {
-      color: white;
-    }
-    .section {
-      display: none;
-      padding: 2rem;
-      height: calc(100vh - 70px);
-      overflow-y: auto;
-    }
-    .active {
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Projesi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">orchan(akademi)</div>
-    <ul>
-      <li onclick="showSection('godot')">godot</li>
-      <li onclick="showSection('python')">python</li>
-      <li onclick="showSection('network')">hakkımda</li>
-    </ul>
-  </nav>
-
-  <div id="godot" class="section active">
-    <h2>Godot Projeleri</h2>
-    <p>asdasdasd</p>
-  </div>
-
-  <div id="python" class="section">
-    <h2>python</h2>
-    <p>pythonpythonpython</p>
-  </div>
-
-  <div id="network" class="section">
-    <h2>HAKKIMDA</h2>
-    <p>orchan akademi</p>
-  </div>
-
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
+    <header>
+        <h1>Hoş Geldiniz!</h1>
+        <p>Bu, basit bir GitHub Pages projesidir.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Proje Hakkında</h2>
+            <p>Bu proje, GitHub Pages kullanarak basit bir web sayfası oluşturmayı göstermektedir.</p>
+        </section>
+        <section>
+            <h2>Kullanım Talimatları</h2>
+            <p>Bu sayfayı kendi projelerinizde örnek olarak kullanabilirsiniz.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 GitHub Pages Projesi</p>
+    </footer>
 </body>
 </html>
